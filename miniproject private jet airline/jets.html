@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Jets</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* In case you want the styles within the same HTML file */
+        .card {
+            background-color: rgba(0, 0, 0, 0.7); /* Black background with 70% opacity */
+            color: #FFD700; /* Gold text color for contrast */
+            border: none; /* Remove default card border */
+            border-radius: 10px; /* Optional: Add some rounded corners */
+        }
+
+        .card-body h5, .card-body p {
+            color: #FFD700; /* Gold text inside the card */
+        }
+
+        .card-img-top {
+            border-top-left-radius: 10px; /* Round the image corners to match the card */
+            border-top-right-radius: 10px;
+        }
+
+        .jets-btn {
+            background-color: #2F4F4F !important; /* Royal grey background */
+            color: #FFD700 !important; /* Gold text */
+            border: 1px solid #FFD700 !important; /* Gold border */
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .jets-btn:hover {
+            background-color: #1E2E2E !important; /* Darker grey on hover */
+            color: #FFD700 !important; /* Gold text */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-black bg-black">
+            <a class="navbar-brand" href="index.html">Elite Wings</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="jets.html">Jets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">Book a Flight</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="text-center mt-4">Available Jets</h1>
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="cesnacitationjets.jpg" class="card-img-top" alt="Jet 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Cesna Citation X</h5>
+                        <p class="card-text">Capacity: 8 <br> Range: 3700 miles  <br>
+                        Speed: 0.78 Mach (600 mph)</p>
+                        <a href="booking.html" class="btn jets-btn">Book This Jet</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="gulfstreamg500jets.jpg" class="card-img-top" alt="Jet 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Gulfstream G500</h5>
+                        <p class="card-text">Capacity: 12 <br> Range: 5300 miles  <br>
+                        Speed: 0.9 Mach (690 mph)</p>
+                        <a href="booking.html" class="btn jets-btn">Book This Jet</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="airbusacj319jets.jpg" class="card-img-top" alt="Jet 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Airbus ACJ319</h5>
+                        <p class="card-text">Capacity: 50 <br> Range: 6800 miles  <br>
+                        Speed: 0.81 Mach (630 mph)</p>
+                        <a href="booking.html" class="btn jets-btn">Book This Jet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p style="text-align: center; font-size: 0.9em; color: white; margin-top: 20px;">
+
+    Subject To Aircraft Availability </p>
+
+
+    <footer class="text-center mt-4">
+        <p>&copy; 2024 Elite Wings. All rights reserved.</p>
+    </footer>
+</body>
+</html>

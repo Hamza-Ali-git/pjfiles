@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Jet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-black bg-black">
+            <a class="navbar-brand" href="index.html">Elite Wings</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="jets.html">Jets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">Book a Flight</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <h1 class="text-center">Book a Flight</h1>
+        <form action="booking_handler.php" method="POST" class="mt-4" id="bookingForm">
+            <div class="form-group">
+                <label for="name" class="text-gold">Full Name / Company Name</label>
+                <input type="text" class="form-control input-gold" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="text-gold">Email Address</label>
+                <input type="email" class="form-control input-gold" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="jet_type" class="text-gold">Jet Type</label>
+                <select class="form-control input-gold" id="jet_type" name="jet_type">
+                    <option value="Luxury Jet A">Cesna Citation X</option>
+                    <option value="Luxury Jet B">Gulfstream G500</option>
+                    <option value="Luxury Jet C">Airbus ACJ319</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="departure" class="text-gold">Departure City (With Airport Code)</label>
+                <input type="text" class="form-control input-gold" id="departure" name="departure" required>
+            </div>
+            <div class="form-group">
+                <label for="destination" class="text-gold">Destination City (With Airport Code)</label>
+                <input type="text" class="form-control input-gold" id="destination" name="destination" required>
+            </div>
+            <div class="form-group">
+                <label for="departure_date" class="text-gold">Departure Date</label>
+                <input type="date" class="form-control input-gold" id="departure_date" name="departure_date" required>
+            </div>
+            <div class="form-group">
+                <label for="return_date" class="text-gold">Return Date</label>
+                <input type="date" class="form-control input-gold" id="return_date" name="return_date">
+            </div>
+            <button type="submit" class="btn jets-btn">Submit Booking</button>
+        </form>
+    </div>
+
+    <p style="text-align: center; font-size: 0.9em; color: white; margin-top: 20px;">
+
+    Please note that estimated expenses for your journey on our chartered aircraft will be conveyed to you through the provided email address at the earliest available opportunity,<br> in accordance with the business hours of our offices located in Delhi, Los Angeles, and London </p>
+
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 Elite Wings. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("bookingForm").onsubmit = function(e) {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            if (name === "" || email === "") {
+                alert("Please fill in all fields");
+                e.preventDefault();
+            }
+        };
+    </script>
+</body>
+</html>

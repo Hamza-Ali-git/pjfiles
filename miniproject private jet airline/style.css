@@ -1,0 +1,130 @@
+/* General styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('marbletexture.jpg'); /* Marble background */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: #fff !important; /* White text for readability */
+}
+
+p{
+    color: royalgrey;
+}
+
+/* Header (navbar) */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.3) !important; /* Black with opacity */
+    color: #FFD700;
+}
+
+.navbar-brand {
+    color: #FFD700 !important; /* Gold for the brand/logo */
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbar-nav .nav-link {
+    color: #FFD700 !important; /* Gold for navigation links */
+}
+
+/* Jumbotron styles */
+.jumbotron {
+    background-color: rgba(0, 0, 0, 0.5); /* Black semi-transparent overlay */
+    color: white !important;
+    text-align: center;
+    padding: 120px 25px;
+    background-size: cover;
+}
+
+.jumbotron h1, .jumbotron p {
+    color: #FFD700 !important; /* Gold text */
+}
+
+.jumbotron a.btn {
+    background-color: #FFD700; /* Gold button */
+    color: #000; /* Black text on button */
+}
+
+.jumbotron a.btn:hover {
+    background-color: #C5A300; /* Darker gold on hover */
+}
+
+/* Form and Input Fields */
+input, textarea, select {
+    background-color: #2F4F4F !important; /* Royal grey color for inputs */
+    color: #fff !important; /* White text */
+    border: 1px solid #FFD700; /* Gold border */
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #bbb !important; /* Lighter grey for placeholder text */
+}
+
+/* Footer styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Black with opacity */
+    padding: 15px 0;
+    color: #fff; /* White text in footer */
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+/* Override Bootstrap's bg-light */
+.navbar, .jumbotron, .footer {
+    background-color: rgba(0, 0, 0, 0.7) !important; /* Semi-transparent black */
+}
+
+/* Specific classes for better readability */
+.text-light {
+    color: #fff !important; /* Force text to be white where necessary */
+}
+
+.text-gold {
+    color: #FFD700 !important; /* Gold text class */
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with 70% opacity */
+    color: #FFD700; /* Gold text color for contrast */
+    border: none; /* Remove default card border */
+    border-radius: 10px; /* Optional: Add some rounded corners */
+}
+
+.card-body h5, .card-body p {
+    color: #FFD700; /* Gold text inside the card */
+}
+
+.card-img-top {
+    border-top-left-radius: 10px; /* Round the image corners to match the card */
+    border-top-right-radius: 10px;
+}
+
+.jets-btn {
+    background-color: #2F4F4F !important; /* Royal grey background */
+    color: #FFD700 !important; /* Gold text */
+    border: 1px solid #FFD700 !important; /* Gold border */
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.jets-btn:hover {
+    background-color: #1E2E2E !important; /* Darker grey on hover */
+    color: #FFD700 !important; /* Gold text */
+}
